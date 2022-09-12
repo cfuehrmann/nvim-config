@@ -14,7 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+--  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
@@ -22,3 +22,4 @@ return require('packer').startup(function(use)
     require('packer').sync()
   end
 end)
+
