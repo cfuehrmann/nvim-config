@@ -11,3 +11,9 @@ keymap("n", "<leader>e", ":Lex 40<cr>", opts)
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+
+keymap("n", "<leader>ff", ":Telescope find_files<cr>", opts)
+keymap("n", "<leader>fb", ":Telescope buffers<cr>", opts)
+keymap("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
+keymap("n", "<leader>fh", ":Telescope help_tags<cr>", opts)
+
