@@ -11,6 +11,14 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+-- Autocommand that runs PackerSync whenever you save the plugins.lua file
+vim.cmd [[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  augroup end
+]]
+
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
@@ -19,7 +27,7 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
---  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
