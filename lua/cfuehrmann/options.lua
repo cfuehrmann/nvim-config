@@ -1,6 +1,6 @@
 local options = {
   mouse = "a",
-  number = true,
+  number = false, -- because we have leap
   expandtab = true,
   shiftwidth = 2,
   tabstop = 2
