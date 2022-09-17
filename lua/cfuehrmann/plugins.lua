@@ -28,7 +28,9 @@ return require('packer').startup(function(use)
   }
 
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use { "ggandor/leap.nvim" }
+  use "ggandor/leap.nvim"
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-buffer"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
