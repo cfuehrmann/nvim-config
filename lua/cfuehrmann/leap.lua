@@ -1,2 +1,2 @@
-require "leap";
+require "leap"
 
