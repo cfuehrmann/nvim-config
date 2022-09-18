@@ -5,4 +5,3 @@ require "cfuehrmann.telescope"
 require "cfuehrmann.treesitter"
 require "cfuehrmann.cmp"
 require "cfuehrmann.lsp"
-

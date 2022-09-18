@@ -18,4 +18,4 @@ keymap("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fh", ":Telescope help_tags<cr>", opts)
 
 -- leap.nvim: Initiate multi-window mode with the current window as the only target:
-keymap("n", "s", ":lua require('leap').leap { target_windows = { vim.fn.win_getid() }}<cr>", opts )
+keymap("n", "s", ":lua require('leap').leap { target_windows = { vim.fn.win_getid() }}<cr>", opts)

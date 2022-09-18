@@ -19,7 +19,7 @@ cmp.setup {
     ["<Esc>"] = cmp.mapping.close(),
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
-       cmp.select_next_item()
+        cmp.select_next_item()
       elseif luasnip.expandable() then
         luasnip.expand()
       elseif luasnip.expand_or_jumpable() then
