@@ -29,10 +29,10 @@ return require('packer').startup(function(use)
 
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use "ggandor/leap.nvim"
+
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-nvim-lsp"
-
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets"
 
